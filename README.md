@@ -50,7 +50,7 @@ conda remove --name rl --all
 
 #### Build the container
 ```
-docker build --tag image_name:image_tag github.com/dibyendu/Reinforcement-Learning
+docker build --tag image_name:image_tag github.com/dibyendu/Reinforcement-Learning#main
 ```
 
 #### Run the container
