@@ -50,7 +50,10 @@ SHELL ["conda", "run", "-n", "reinforcement_learning", "/bin/bash", "-c"]
 RUN conda install pytorch cudatoolkit=10.2 -c pytorch
 RUN conda install -c conda-forge matplotlib==3.4.1
 RUN conda install -c conda-forge jupyter==1.0.0
-RUN conda install -c conda-forge jupyter_contrib_nbextensions==0.5.1
+RUN conda install -c conda-forge pybox2d==2.3.10
+RUN conda install -c conda-forge seaborn==0.11.1
+
+RUN pip install jupyter_contrib_nbextensions==0.5.1
 
 RUN jupyter nbextension disable contrib_nbextensions_help_item/main && \
     jupyter nbextension disable nbextensions_configurator/config_menu/main && \
@@ -65,8 +68,6 @@ RUN jupyter nbextension disable contrib_nbextensions_help_item/main && \
     jupyter nbextension enable execute_time/ExecuteTime && \
     jupyter nbextension enable toggle_all_line_numbers/main
 
-RUN conda install -c conda-forge pybox2d==2.3.10
-RUN conda install -c conda-forge seaborn==0.11.1
 RUN pip install PyVirtualDisplay==2.1
 RUN pip install mlagents-envs==0.25.1
 RUN pip install gym==0.18.0
