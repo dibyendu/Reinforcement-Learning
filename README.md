@@ -22,9 +22,9 @@ conda activate rl
 conda install pytorch cudatoolkit=10.2 -c pytorch
 conda install -c conda-forge matplotlib==3.4.1
 conda install -c conda-forge jupyter==1.0.0
-conda install -c conda-forge jupyter_contrib_nbextensions==0.5.1
 conda install -c conda-forge pybox2d==2.3.10
 conda install -c conda-forge seaborn==0.11.1
+pip install jupyter_contrib_nbextensions==0.5.1
 pip install PyVirtualDisplay==2.1
 pip install mlagents-envs==0.25.1
 pip install gym==0.18.0
