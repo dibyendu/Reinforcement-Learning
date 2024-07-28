@@ -1,5 +1,5 @@
-# From https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md#cuda-102
-FROM nvidia/cuda:10.2-runtime-ubuntu18.04
+# From https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags
+FROM nvcr.io/nvidia/cuda:10.2-runtime-ubuntu18.04
 
 ARG XFONT_SRC=http://security.ubuntu.com/ubuntu/pool/main/libx/libxfont/libxfont1_1.5.1-1ubuntu0.16.04.4_amd64.deb
 ARG XVFB_SRC=http://security.ubuntu.com/ubuntu/pool/universe/x/xorg-server/xvfb_1.18.4-0ubuntu0.12_amd64.deb
